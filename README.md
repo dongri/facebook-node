@@ -1,6 +1,6 @@
-# NodeJS Library for Facebook [![Build Status](https://travis-ci.org/Thuzi/facebook-node-sdk.png?branch=master,dev,azure)](https://travis-ci.org/Thuzi/facebook-node-sdk.png?branch=master,dev,azure)
+# NodeJS Library for Facebook [![Build Status](https://travis-ci.org/Thuzi/fb-api.png?branch=master,dev,azure)](https://travis-ci.org/Thuzi/fb-api.png?branch=master,dev,azure)
 
-With facebook-node-sdk you can now easily write the same code and share between your server (nodejs) and the client ([Facebook Javascript SDK](https://developers.facebook.com/docs/reference/javascript/)).
+With fb-api you can now easily write the same code and share between your server (nodejs) and the client ([Facebook Javascript SDK](https://developers.facebook.com/docs/reference/javascript/)).
 
 This SDK will report usage of which AppID is using it directly to Facebook.
 
@@ -8,10 +8,10 @@ This SDK will report usage of which AppID is using it directly to Facebook.
 
 **License:** Apache v2
 
-# Installing facebook-node-sdk
+# Installing fb-api
 
 ```
-npm install fb
+npm install fb-api
 ```
 
 ```javascript
@@ -67,7 +67,7 @@ FB.api('4', { fields: ['id', 'name'] }, function (res) {
 var FB = require('fb-api');
 FB.setAccessToken('access_token');
 
-var body = 'My first post using facebook-node-sdk';
+var body = 'My first post using fb-api';
 FB.api('me/feed', 'post', { message: body}, function (res) {
   if(!res || res.error) {
     console.log(!res ? 'error occurred' : res.error);
@@ -296,7 +296,7 @@ FB.api('', 'post', {
 
 *This is a non-standard behavior and does not work in the official client side FB JS SDK.*
 
-facebook-node-sdk is capable of handling oauth requests which return non-json responses. You can use it by calling `api` method.
+fb-api is capable of handling oauth requests which return non-json responses. You can use it by calling `api` method.
 
 ### Get facebook application access token
 
@@ -385,7 +385,7 @@ FB.api('oauth/access_token', {
 
 ## Legacy REST Api
 
-__Although Legacy REST Api is supported by facebook-node-sdk, it is highly discouraged to be used, as Facebook is in the process of deprecating the Legacy REST Api.__
+__Although Legacy REST Api is supported by fb-api, it is highly discouraged to be used, as Facebook is in the process of deprecating the Legacy REST Api.__
 
 ### Get
 
@@ -409,7 +409,7 @@ FB.api({ method: 'users.getInfo', uids: ['4'], fields: ['uid', 'name'] }, functi
 var FB = require('fb-api');
 FB.setAccessToken('access_token');
 
-var message = 'Hi from facebook-node-sdk';
+var message = 'Hi from fb-api';
 FB.api({ method: 'stream.publish', message: message }, function (res) {
     if(!res || res.error_msg) {
         console.log(!res ? 'error occurred' : res.error_msg);
@@ -508,7 +508,7 @@ using the same `FB` object.
 
 *This is a non-standard api and does not exist in the official client side FB JS SDK.*
 
-Gets the string representation of the facebook-node-sdk library version.
+Gets the string representation of the fb-api library version.
 
 ```js
 var FB = require('fb-api');
@@ -614,7 +614,7 @@ FB.napi('4', function(error, response) {
 
 `FB.napi` was added especially to make it easier to work with async control flow libraries.
 
-Here are some examples of using facebook-node-sdk with [Step](https://npmjs.org/package/step).
+Here are some examples of using fb-api with [Step](https://npmjs.org/package/step).
 
 You will need to install `step`.
 
@@ -648,7 +648,7 @@ Step(
 
 ### FB.napi with Step
 
-Simplified version of facebook-node-sdk async callbacks using `FB.napi`.
+Simplified version of fb-api async callbacks using `FB.napi`.
 
 ```js
 var FB      = require('fb-api'),
