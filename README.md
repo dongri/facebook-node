@@ -4,7 +4,7 @@ With facebook-node you can now easily write the same code and share between your
 
 This SDK will report usage of which AppID is using it directly to Facebook.
 
-**Author:** [Thuzi](http://www.thuzi.com)
+**Author:** [Dongri Jin](http://dongri.at)
 
 **License:** Apache v2
 
