@@ -247,7 +247,7 @@
             }
 
             path = getApiVersion() + '/' + path;
-            console.log(path)
+
             if(domain === 'graph') {
                 uri = 'https://graph.facebook.com/' + path;
                 isOAuthRequest = /^oauth.*/.test('oauth/');

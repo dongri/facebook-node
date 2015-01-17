@@ -1,6 +1,6 @@
 
 var express       = require('express'),
-    FB            = require('../../fb'),
+    FB            = require('../../facebook-node'),
     http          = require('http'),
     path          = require('path'),
 

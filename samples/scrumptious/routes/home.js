@@ -1,5 +1,5 @@
 
-var FB              = require('../../../fb'),
+var FB              = require('../../../facebook-node'),
     Step            = require('step'),
 
     config          = require('../config');
@@ -9,6 +9,7 @@ FB.options({
     appSecret:      config.facebook.appSecret,
     redirectUri:    config.facebook.redirectUri
 });
+FB.setApiVersion("v2.2")
 
 exports.index = function(req, res) {
     var accessToken = req.session.access_token;

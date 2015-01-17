@@ -1,17 +1,17 @@
 {
   "author": "Dongri Jin <dongriat@gmail.com> (https://github.com/dongri)",
-  "name": "fb-api",
+  "name": "facebook-node",
   "description": "NodeJS Library for Facebook",
   "keywords": [
     "facebook",
-    "fb-api",
+    "facebook-node",
     "graph"
   ],
-  "version": "0.0.2",
-  "homepage": "https://github.com/dongri/fb-api",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dongri/facebook-node",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dongri/fb-api.git"
+    "url": "git://github.com/dongri/facebook-node.git"
   },
   "engines": {
     "node": ">=0.6.9"

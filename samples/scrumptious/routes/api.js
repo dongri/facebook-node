@@ -1,5 +1,5 @@
 
-var FB              = require('../../../fb'),
+var FB              = require('../../../facebook-node'),
 
     config          = require('../config');
 
