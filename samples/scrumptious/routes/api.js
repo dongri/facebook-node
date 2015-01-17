@@ -3,6 +3,8 @@ var FB              = require('../../../fb'),
 
     config          = require('../config');
 
+FB.setApiVersion("v2.2")
+
 exports.search = function (req, res) {
     var parameters              = req.query;
     parameters.access_token     = req.session.access_token;

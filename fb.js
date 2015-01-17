@@ -22,6 +22,7 @@
             , log
             , has
             , options
+            , apiVersion = "v2.0"
             , METHODS = ['get', 'post', 'delete', 'put']
             , opts = {
                   'accessToken': null
@@ -245,6 +246,8 @@
                 params.appsecret_proof = getAppSecretProof(params.access_token, opts.appSecret);
             }
 
+            path = getApiVersion() + '/' + path;
+            console.log(path)
             if(domain === 'graph') {
                 uri = 'https://graph.facebook.com/' + path;
                 isOAuthRequest = /^oauth.*/.test('oauth/');
@@ -501,6 +504,14 @@
             }
         };
 
+        setApiVersion = function (version) {
+          apiVersion = version
+        };
+
+        getApiVersion = function (version) {
+          return apiVersion
+        };
+
         function FacebookApiException(res) {
             this.name = "FacebookApiException";
             this.message = JSON.stringify(res || {});
@@ -667,6 +678,7 @@
             , napi: napi // this method does not exist in fb js sdk
             , getAccessToken: getAccessToken
             , setAccessToken: setAccessToken // this method does not exist in fb js sdk
+            , setApiVersion: setApiVersion // set facebook api version
             , parseSignedRequest : parseSignedRequest // this method does not exist in fb js sdk
             , getLoginUrl: getLoginUrl // this method does not exist in fb js sdk
             , options: options // this method does not exist in the fb js sdk

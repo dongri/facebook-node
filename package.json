@@ -1,17 +1,17 @@
 {
-  "author": "Thuzi LLC <pshrestha@thuzi.com> (https://github.com/Thuzi)",
-  "name": "fb",
+  "author": "Dongri Jin <dongriat@gmail.com> (https://github.com/dongri)",
+  "name": "fb-api",
   "description": "NodeJS Library for Facebook",
   "keywords": [
     "facebook",
     "fb",
     "graph"
   ],
-  "version": "0.7.3",
-  "homepage": "https://github.com/Thuzi/facebook-node-sdk",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dongri/fb-api",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Thuzi/facebook-node-sdk.git"
+    "url": "git://github.com/dongri/fb-api.git"
   },
   "engines": {
     "node": ">=0.6.9"

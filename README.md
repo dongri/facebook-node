@@ -16,6 +16,7 @@ npm install fb
 
 ```javascript
 var FB = require('fb');
+FB.setApiVersion("v2.2");
 ```
 
 # Running Samples
