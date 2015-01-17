@@ -7,7 +7,7 @@
     "facebook-node",
     "graph"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/dongri/facebook-node",
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
     "should": "~1.2.2"
   },
   "optionalDependencies": {},
-  "main": "./fb.js",
+  "main": "./facebook-node.js",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha --recursive --reporter spec",
     "testw": "node ./node_modules/mocha/bin/mocha --recursive --watch --reporter spec"
