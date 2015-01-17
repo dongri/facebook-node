@@ -1,4 +1,4 @@
-# NodeJS Library for Facebook [![Build Status](https://travis-ci.org/Thuzi/facebook-node.png?branch=master,dev,azure)](https://travis-ci.org/Thuzi/facebook-node.png?branch=master,dev,azure)
+# NodeJS Library for Facebook
 
 With facebook-node you can now easily write the same code and share between your server (nodejs) and the client ([Facebook Javascript SDK](https://developers.facebook.com/docs/reference/javascript/)).
 
