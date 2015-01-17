@@ -4,7 +4,7 @@
   "description": "NodeJS Library for Facebook",
   "keywords": [
     "facebook",
-    "fb",
+    "fb-api",
     "graph"
   ],
   "version": "0.0.1",
